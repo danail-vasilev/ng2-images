@@ -6,7 +6,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/Reports', pathMatch: 'full' },
+  { path: '', redirectTo: '/ImageGallery', pathMatch: 'full' },
   { path: 'ImageGallery', component: ImageGalleryComponent },
   { path: 'Reports', component: ReportsComponent }
 ];

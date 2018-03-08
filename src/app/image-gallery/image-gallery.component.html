@@ -1,1 +1,5 @@
 This is Image Gallery page !
+<ng-container *ngFor="let image of images; let i = index">
+{{image.path}} : 
+<img src="{{baseUrl}}{{image.path}}" alt="{{image.path}}" style="width: 120px;height: 120px;" (click)="uploadImage(image.path)">
+</ng-container>

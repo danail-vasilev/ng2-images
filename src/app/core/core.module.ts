@@ -4,13 +4,14 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Api, ImageService } from './services/index';
 
 @NgModule({
   imports: [
     HttpClientModule,
     RouterModule,
     CommonModule],
-  providers: [],
+  providers: [Api, ImageService],
   declarations: [
   ],
   exports: [
