@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ToastyModule, ToastyService } from 'ng2-toasty';
 import { Api, ImageService } from './services/index';
+import { NavigationComponent } from './components/navigation.component';
 
 @NgModule({
   imports: [
@@ -15,9 +16,10 @@ import { Api, ImageService } from './services/index';
     CommonModule],
   providers: [Api, ImageService],
   declarations: [
+    NavigationComponent
   ],
   exports: [
-    HttpClientModule, ToastyModule]
+    HttpClientModule, ToastyModule, NavigationComponent]
 })
 export class CoreModule {
   constructor( @Optional() @SkipSelf() parentModule: CoreModule) {
