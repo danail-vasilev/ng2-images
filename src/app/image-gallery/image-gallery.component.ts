@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageService } from '../core/services/index';
 import { environment } from '../../environments/environment';
+import { Image, UploadImageResponse } from '../core/interfaces/index';
 
 @Component({
   selector: 'app-image-gallery',
@@ -16,13 +17,13 @@ export class ImageGalleryComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.imageService.getImages().subscribe((_images: any[]) => {
+    this.imageService.getImages().subscribe((_images: Image[]) => {
       console.log('images: ' + _images);
       this.images = _images;
     });
   }
   uploadImage(imageName: string): void {
-    this.imageService.uploadImage(imageName).subscribe((result: any) => {
+    this.imageService.uploadImage(imageName).subscribe((result: UploadImageResponse) => {
       console.log(result);
     });
   }
