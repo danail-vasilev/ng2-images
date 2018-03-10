@@ -1,1 +1,16 @@
-This is Reports page !
+<div style="display: block; width:600px; height: 600px; float: left">
+    <canvas baseChart width="600" [datasets]="totalLikesCommentData" [labels]="barChartLabels" [options]="barChartOptions" [chartType]="'bar'"></canvas>
+</div>
+<div style="display: block; width: 400px; height: 400px; float: left;">
+    Total Reach: 1890091 Total Posts: 6 Total Influencers: 3
+</div>
+<div style="display: block; width: 400px; height: 400px; float: left;">
+    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="'doughnut'" [options]="doughnutChartOptions"></canvas>
+</div>
+<br style="clear:both;" />
+<div style="display: block; width: 400px; height: 400px; float: left;">
+    <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="'pie'" [options]="pieChartOptions"></canvas>
+</div>
+<div style="display: block; width: 400px; height: 400px; float: left;">
+    <canvas baseChart [data]="pieChartData2" [labels]="pieChartLabels2" [chartType]="'pie'" [options]="pieChartOptions2"></canvas>
+</div>

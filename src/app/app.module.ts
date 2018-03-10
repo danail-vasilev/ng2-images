@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { CoreModule } from './core/core.module';
 import { ReportsComponent } from './reports/reports.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    CoreModule
+    CoreModule,
+    ChartsModule
   ],
   bootstrap: [AppComponent]
 })
